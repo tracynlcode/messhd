@@ -18,8 +18,13 @@ Get your ngrok authentication token from https://dashboard.ngrok.com/get-started
 
 ngrok dashboard
 You will need this token when you build the Docker container on Railway or locally.
-
 〣 Run with Railway
+Go to https://railway.app/new and build the Docker container with the following environment variables:
+
+AUTH_TOKEN: Your ngrok authentication token.
+PASSWORD: Password for SSH access (optional, default is rootuser).
+
+
 〣 Run Locally
 〣 Run with Github Workflow
 Wait for the build to complete. Once it's done, you should see your ssh & password in log.
